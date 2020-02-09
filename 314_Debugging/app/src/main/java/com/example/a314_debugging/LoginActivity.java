@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class LoginActivity extends AppCompatActivity {
     EditText uname,upass;
-    Button login;
+    Button login,signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,12 +19,19 @@ public class LoginActivity extends AppCompatActivity {
         uname=findViewById(R.id.editText4);
         upass=findViewById(R.id.editText5);
         login=findViewById(R.id.button2);
-
+        signup=findViewById(R.id.button3);
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(LoginActivity.this,MainActivity.class);
+                Intent i=new Intent(LoginActivity.this,Home.class);
                 startActivity(i);
+            }
+        });
+        signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(intent);
             }
         });
     }
