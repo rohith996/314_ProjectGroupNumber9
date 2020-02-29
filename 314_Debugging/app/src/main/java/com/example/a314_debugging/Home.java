@@ -20,6 +20,7 @@ public class Home extends AppCompatActivity {
        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list_adapter=new List_Adapter(reserv);
         recyclerView.setAdapter(list_adapter);
+        
     }
     public void indata(){
         Reservations r=new Reservations(R.drawable.pic_base,"21/11/2019","24/11/2019","$300");
