@@ -3,15 +3,6 @@ package com.example.cars_for_us;
 public class Reservations{
     int image;
     String indate,outdate,price;
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
     Reservations(int image, String indate, String outdate, String price) {
         this.image=image;
         this.indate=indate;
@@ -31,6 +22,7 @@ public class Reservations{
     public void setOutdate(String outdate) {
         this.outdate = outdate;
     }
+    String outdate;
     public int getImage() {
         return image;
     }
