@@ -1,4 +1,4 @@
-
+package com.example.a314_debugging;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +43,7 @@ public class List_Adapter extends  RecyclerView.Adapter<List_Adapter.List_Viewfi
 
     public static class List_Viewfinder extends RecyclerView.ViewHolder {
         ImageView img;
-        TextView t1, t2;
+        TextView t1, t2, t3;
 
         public List_Viewfinder(@NonNull View itemView) {
             super(itemView);

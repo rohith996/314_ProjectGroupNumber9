@@ -3,7 +3,9 @@ package com.example.a314_debugging;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,11 +18,11 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         indata();
-      recyclerView.findViewById(R.id.recyclerView1);
-       recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.findViewById(R.id.recyclerView1);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list_adapter=new List_Adapter(reserv);
         recyclerView.setAdapter(list_adapter);
-        
+
     }
     public void indata(){
         Reservations r=new Reservations(R.drawable.pic_base,"21/11/2019","24/11/2019","$300");

@@ -7,6 +7,7 @@
     tools:context=".Home">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
         android:layout_width="393dp"
         android:layout_height="468dp"
         android:layout_marginBottom="72dp"
@@ -15,5 +16,9 @@
         app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         tools:itemCount="15"
-        tools:listitem="@layout/recycler_view_item_1" />
+        tools:listitem="@layout/recycler_view_item_1" >
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
